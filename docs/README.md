@@ -24,14 +24,17 @@ As bibliotecas utilizadas:
 É ideializado que a construção do pipeline seja reutilizável em outros porcessos da empresa. Assim, a estrutura de trabalho é definida em: 
 1. [jupter Notebook](/src/pipelinedata/testes.ipynb) para realização de testes e manipulações de dados
 2. Estrutura de pastas que obedece às diretrizes de um bom desenvolvimento e engenharia de software
+````
 | pipeline-data/
-
 |--docs/
-|--**src/**: Contém todo o código fonte do projeto.
-  - **components/**: Componentes reutilizáveis da aplicação.
-  - **pages/**: Páginas da aplicação.
-  - **utils/**: Utilitários e funções auxiliares.
+|--src/: Contém todo o código fonte do projeto.
+|-------data/: Contém as bases de dados
+|------------raw/
+|------------ready-processed/
+|-----pipelinedata/: Contém os códigos fontes
 
+
+````
 3. Criação de um ambiente virtual Python
 4. Utilizar os processo de ETL
 
